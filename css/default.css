@@ -1,0 +1,34 @@
+@charset "utf-8";
+*{
+    outline:none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+body,h1,h2,h3,h4,h5,h6,p,dl,dd,dt{margin:0;}
+
+body{
+    min-width:1200px;
+    color:#333; /*a태그 제외된 것만 색상적용*/
+    font-family:'NotoSans',sans-serif;
+}
+
+ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+a{
+    text-decoration:none;
+    color:#333;
+}
+
+.inner{
+    width:1200px;
+    margin:0 auto; /*block을 중앙배치*/
+}
+
+.cf::after{
+    content:"";
+    display:block; /*컨텐츠를 구현*/
+    clear:both;
+}
